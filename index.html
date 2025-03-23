@@ -14,321 +14,534 @@
         Best Sellers
       </h1>
 
-      <div class="p-4 bg-gray-100  min-h-screen">
-        <section class="grid grid-cols-2 lg:grid-cols-[repeat(10,355px)] gap-4 p-4 w-full overflow-x-auto" aria-label="Scrollable content grid">
-            <article class="w-full lg:h-[467px] aspect-[0.76] lg:aspect-none rounded relative">
-                <span class="absolute bg-white rounded-full border-black border top-[6px] left-[6px] uppercase bebas-neue text-[10px] px-2 py-[2px]">Best seller</span>
-                <div class="w-full lg:h-[355px] overflow-hidden rounded-[10px]">
-                    <img 
-                    class="w-full product-image"
-                    src="https://plus.unsplash.com/premium_photo-1713586580802-854a58542159?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                    data-primary-img="https://plus.unsplash.com/premium_photo-1713586580802-854a58542159?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    data-secondary-img="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="Crossed legs with yellow background">
-                    
+      <div class="p-4 min-h-screen">
+        <div class="relative">
+            <div id="gridWrapper" class="relative max-h-[1000px] lg:max-h-none overflow-hidden transition-all duration-500 ease-in-out">
+                <section 
+                    id="productGrid"
+                    class="grid grid-cols-2 lg:grid-cols-[repeat(10,355px)] gap-4 p-4 pb-6 w-full overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden" 
+                    aria-label="Scrollable content grid">
+                    <article class="w-full lg:h-[467px] aspect-[0.76] lg:aspect-none rounded relative">
+                        <span class="absolute bg-white rounded-full border-black border top-[6px] left-[6px] uppercase bebas-neue text-[10px] px-2 py-[2px]">Best seller</span>
+                        <div class="w-full lg:h-[355px] overflow-hidden rounded-[10px] aspect-square lg:aspect-auto">
+                            <img 
+                            class="w-full h-full object-cover product-image"
+                            src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1964"
+                            data-primary-img="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1964"
+                            data-secondary-img="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1920"
+                            alt="Fashion model wearing t-shirt">
+                            
 
-                </div>
-                <div class="p-3">
-                    <h2 class="uppercase bebas-neue text-lg mb-1">Outside Vibes T-Shirt Sunshine</h2>
-                    <div class="flex mb-1">
-                        <ul class="flex items center">
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                        </ul>
-                        <p class="poppins font-[400] text-xs ml-2">1,453 Reviews</p>
-                    </div>
-                    <p class="poppins font-[500]">$104.95</p>
-                </div>
-                
-            </article>
-            <article class="w-full lg:h-[467px] aspect-[0.76] lg:aspect-none rounded relative">
-                <span class="absolute bg-white rounded-full border-black border top-[6px] left-[6px] uppercase bebas-neue text-[10px] px-2 py-[2px]">Best seller</span>
-                <div class="w-full lg:h-[355px] overflow-hidden rounded-[10px]">
-                    <img 
-                    class="w-full product-image"
-                    src="https://plus.unsplash.com/premium_photo-1713586580802-854a58542159?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                    data-primary-img="https://plus.unsplash.com/premium_photo-1713586580802-854a58542159?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    data-secondary-img="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="Crossed legs with yellow background">
-                    
+                        </div>
+                        <div class="p-3">
+                            <h2 class="uppercase bebas-neue text-lg mb-1">Fashion model wearing t-shirt</h2>
+                            <div class="flex mb-2">
+                                <ul class="flex items-center">
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-lined.svg" alt="a star empty representing no vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                </ul>
+                                <p class="poppins font-[400] text-[11px] lg:text-xs ml-2">1,453 Reviews</p>
+                            </div>
+                            <p class="poppins font-[500]">$104.95</p>
+                        </div>
+                        
+                    </article>
+                    <article class="w-full lg:h-[467px] aspect-[0.76] lg:aspect-none rounded relative">
+                        <span class="absolute bg-white rounded-full border-black border top-[6px] left-[6px] uppercase bebas-neue text-[10px] px-2 py-[2px]">Best seller</span>
+                        <div class="w-full lg:h-[355px] overflow-hidden rounded-[10px] aspect-square lg:aspect-auto">
+                            <img 
+                            class="w-full h-full object-cover product-image"
+                            src="https://images.unsplash.com/photo-1583744946564-b52d496c3fed?q=80&w=1974"
+                            data-primary-img="https://images.unsplash.com/photo-1583744946564-b52d496c3fed?q=80&w=1974"
+                            data-secondary-img="https://images.unsplash.com/photo-1554568218-0f1715e72254?q=80&w=1974"
+                            alt="T-shirt on hanger">
+                            
 
-                </div>
-                <div class="p-3">
-                    <h2 class="uppercase bebas-neue text-lg mb-1">Outside Vibes T-Shirt Sunshine</h2>
-                    <div class="flex mb-1">
-                        <ul class="flex items center">
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                        </ul>
-                        <p class="poppins font-[400] text-xs ml-2">1,453 Reviews</p>
-                    </div>
-                    <p class="poppins font-[500]">$104.95</p>
-                </div>
-                
-            </article>
-            <article class="w-full lg:h-[467px] aspect-[0.76] lg:aspect-none rounded relative">
-                <span class="absolute bg-white rounded-full border-black border top-[6px] left-[6px] uppercase bebas-neue text-[10px] px-2 py-[2px]">Best seller</span>
-                <div class="w-full lg:h-[355px] overflow-hidden rounded-[10px]">
-                    <img 
-                    class="w-full product-image"
-                    src="https://plus.unsplash.com/premium_photo-1713586580802-854a58542159?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                    data-primary-img="https://plus.unsplash.com/premium_photo-1713586580802-854a58542159?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    data-secondary-img="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="Crossed legs with yellow background">
-                    
+                        </div>
+                        <div class="p-3">
+                            <h2 class="uppercase bebas-neue text-lg mb-1">T-shirt on hanger</h2>
+                            <div class="flex mb-2">
+                                <ul class="flex items-center">
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-lined.svg" alt="a star empty representing no vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-lined.svg" alt="a star empty representing no vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-lined.svg" alt="a star empty representing no vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                </ul>
+                                <p class="poppins font-[400] text-[11px] lg:text-xs ml-2">1,453 Reviews</p>
+                            </div>
+                            <p class="poppins font-[500]">$104.95</p>
+                        </div>
+                        
+                    </article>
+                    <article class="w-full lg:h-[467px] aspect-[0.76] lg:aspect-none rounded relative">
+                        <span class="absolute bg-white rounded-full border-black border top-[6px] left-[6px] uppercase bebas-neue text-[10px] px-2 py-[2px]">Best seller</span>
+                        <div class="w-full lg:h-[355px] overflow-hidden rounded-[10px] aspect-square lg:aspect-auto">
+                            <img 
+                            class="w-full h-full object-cover product-image"
+                            src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?q=80&w=1974"
+                            data-primary-img="https://images.unsplash.com/photo-1503341504253-dff4815485f1?q=80&w=1974"
+                            data-secondary-img="https://images.unsplash.com/photo-1583744946564-b52d496c3fed?q=80&w=1974"
+                            alt="Person wearing white t-shirt">
+                            
 
-                </div>
-                <div class="p-3">
-                    <h2 class="uppercase bebas-neue text-lg mb-1">Outside Vibes T-Shirt Sunshine</h2>
-                    <div class="flex mb-1">
-                        <ul class="flex items center">
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                        </ul>
-                        <p class="poppins font-[400] text-xs ml-2">1,453 Reviews</p>
-                    </div>
-                    <p class="poppins font-[500]">$104.95</p>
-                </div>
-                
-            </article>
-            <article class="w-full lg:h-[467px] aspect-[0.76] lg:aspect-none rounded relative">
-                <span class="absolute bg-white rounded-full border-black border top-[6px] left-[6px] uppercase bebas-neue text-[10px] px-2 py-[2px]">Best seller</span>
-                <div class="w-full lg:h-[355px] overflow-hidden rounded-[10px]">
-                    <img 
-                    class="w-full product-image"
-                    src="https://plus.unsplash.com/premium_photo-1713586580802-854a58542159?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                    data-primary-img="https://plus.unsplash.com/premium_photo-1713586580802-854a58542159?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    data-secondary-img="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="Crossed legs with yellow background">
-                    
+                        </div>
+                        <div class="p-3">
+                            <h2 class="uppercase bebas-neue text-lg mb-1">Person wearing white t-shirt</h2>
+                            <div class="flex mb-2">
+                                <ul class="flex items-center">
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-lined.svg" alt="a star empty representing no vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                </ul>
+                                <p class="poppins font-[400] text-[11px] lg:text-xs ml-2">1,453 Reviews</p>
+                            </div>
+                            <p class="poppins font-[500]">$104.95</p>
+                        </div>
+                        
+                    </article>
+                    <article class="w-full lg:h-[467px] aspect-[0.76] lg:aspect-none rounded relative">
+                        <span class="absolute bg-white rounded-full border-black border top-[6px] left-[6px] uppercase bebas-neue text-[10px] px-2 py-[2px]">Best seller</span>
+                        <div class="w-full lg:h-[355px] overflow-hidden rounded-[10px] aspect-square lg:aspect-auto">
+                            <img 
+                            class="w-full h-full object-cover product-image"
+                            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1980"
+                            data-primary-img="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1980"
+                            data-secondary-img="https://images.unsplash.com/photo-1622445275576-721325763afe?q=80&w=2080"
+                            alt="T-shirt collection">
+                            
 
-                </div>
-                <div class="p-3">
-                    <h2 class="uppercase bebas-neue text-lg mb-1">Outside Vibes T-Shirt Sunshine</h2>
-                    <div class="flex mb-1">
-                        <ul class="flex items center">
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                        </ul>
-                        <p class="poppins font-[400] text-xs ml-2">1,453 Reviews</p>
-                    </div>
-                    <p class="poppins font-[500]">$104.95</p>
-                </div>
-                
-            </article>
-            <article class="w-full lg:h-[467px] aspect-[0.76] lg:aspect-none rounded relative">
-                <span class="absolute bg-white rounded-full border-black border top-[6px] left-[6px] uppercase bebas-neue text-[10px] px-2 py-[2px]">Best seller</span>
-                <div class="w-full lg:h-[355px] overflow-hidden rounded-[10px]">
-                    <img 
-                    class="w-full product-image"
-                    src="https://plus.unsplash.com/premium_photo-1713586580802-854a58542159?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                    data-primary-img="https://plus.unsplash.com/premium_photo-1713586580802-854a58542159?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    data-secondary-img="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="Crossed legs with yellow background">
-                    
+                        </div>
+                        <div class="p-3">
+                            <h2 class="uppercase bebas-neue text-lg mb-1">T-shirt collection</h2>
+                            <div class="flex mb-2">
+                                <ul class="flex items-center">
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        data-filled-star="images/iconmonstr-star-filled.svg"
+                                        data-empty-star="images/iconmonstr-star-lined.svg">
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-lined.svg" alt="a star empy representing no vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                </ul>
+                                <p class="poppins font-[400] text-[11px] lg:text-xs ml-2">1,453 Reviews</p>
+                            </div>
+                            <p class="poppins font-[500]">$104.95</p>
+                        </div>
+                        
+                    </article>
+                    <article class="w-full lg:h-[467px] aspect-[0.76] lg:aspect-none rounded relative">
+                        <span class="absolute bg-white rounded-full border-black border top-[6px] left-[6px] uppercase bebas-neue text-[10px] px-2 py-[2px]">Best seller</span>
+                        <div class="w-full lg:h-[355px] overflow-hidden rounded-[10px] aspect-square lg:aspect-auto">
+                            <img 
+                            class="w-full h-full object-cover product-image"
+                            src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=2070"
+                            data-primary-img="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=2070"
+                            data-secondary-img="https://images.unsplash.com/photo-1516826957135-700dedea698c?q=80&w=1974"
+                            alt="Folded t-shirts">
+                            
 
-                </div>
-                <div class="p-3">
-                    <h2 class="uppercase bebas-neue text-lg mb-1">Outside Vibes T-Shirt Sunshine</h2>
-                    <div class="flex mb-1">
-                        <ul class="flex items center">
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                        </ul>
-                        <p class="poppins font-[400] text-xs ml-2">1,453 Reviews</p>
-                    </div>
-                    <p class="poppins font-[500]">$104.95</p>
-                </div>
-                
-            </article>
-            <article class="w-full lg:h-[467px] aspect-[0.76] lg:aspect-none rounded relative">
-                <span class="absolute bg-white rounded-full border-black border top-[6px] left-[6px] uppercase bebas-neue text-[10px] px-2 py-[2px]">Best seller</span>
-                <div class="w-full lg:h-[355px] overflow-hidden rounded-[10px]">
-                    <img 
-                    class="w-full product-image"
-                    src="https://plus.unsplash.com/premium_photo-1713586580802-854a58542159?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                    data-primary-img="https://plus.unsplash.com/premium_photo-1713586580802-854a58542159?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    data-secondary-img="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="Crossed legs with yellow background">
-                    
+                        </div>
+                        <div class="p-3">
+                            <h2 class="uppercase bebas-neue text-lg mb-1">Folded t-shirts</h2>
+                            <div class="flex mb-2">
+                                <ul class="flex items-center">
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-lined.svg" alt="a star empty representing no vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                </ul>
+                                <p class="poppins font-[400] text-[11px] lg:text-xs ml-2">1,453 Reviews</p>
+                            </div>
+                            <p class="poppins font-[500]">$104.95</p>
+                        </div>
+                        
+                    </article>
+                    <article class="w-full lg:h-[467px] aspect-[0.76] lg:aspect-none rounded relative">
+                        <span class="absolute bg-white rounded-full border-black border top-[6px] left-[6px] uppercase bebas-neue text-[10px] px-2 py-[2px]">Best seller</span>
+                        <div class="w-full lg:h-[355px] overflow-hidden rounded-[10px] aspect-square lg:aspect-auto">
+                            <img 
+                            class="w-full h-full object-cover product-image"
+                            src="https://images.unsplash.com/photo-1554568218-0f1715e72254?q=80&w=1974"
+                            data-primary-img="https://images.unsplash.com/photo-1554568218-0f1715e72254?q=80&w=1974"
+                            data-secondary-img="https://images.unsplash.com/photo-1503341504253-dff4815485f1?q=80&w=1974"
+                            alt="White t-shirt mockup">
+                            
 
-                </div>
-                <div class="p-3">
-                    <h2 class="uppercase bebas-neue text-lg mb-1">Outside Vibes T-Shirt Sunshine</h2>
-                    <div class="flex mb-1">
-                        <ul class="flex items center">
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                        </ul>
-                        <p class="poppins font-[400] text-xs ml-2">1,453 Reviews</p>
-                    </div>
-                    <p class="poppins font-[500]">$104.95</p>
-                </div>
-                
-            </article>
-            <article class="w-full lg:h-[467px] aspect-[0.76] lg:aspect-none rounded relative">
-                <span class="absolute bg-white rounded-full border-black border top-[6px] left-[6px] uppercase bebas-neue text-[10px] px-2 py-[2px]">Best seller</span>
-                <div class="w-full lg:h-[355px] overflow-hidden rounded-[10px]">
-                    <img 
-                    class="w-full product-image"
-                    src="https://plus.unsplash.com/premium_photo-1713586580802-854a58542159?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                    data-primary-img="https://plus.unsplash.com/premium_photo-1713586580802-854a58542159?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    data-secondary-img="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="Crossed legs with yellow background">
-                    
+                        </div>
+                        <div class="p-3">
+                            <h2 class="uppercase bebas-neue text-lg mb-1">White t-shirt mockup</h2>
+                            <div class="flex mb-2">
+                                <ul class="flex items-center">
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                </ul>
+                                <p class="poppins font-[400] text-[11px] lg:text-xs ml-2">1,453 Reviews</p>
+                            </div>
+                            <p class="poppins font-[500]">$104.95</p>
+                        </div>
+                        
+                    </article>
+                    <article class="w-full lg:h-[467px] aspect-[0.76] lg:aspect-none rounded relative">
+                        <span class="absolute bg-white rounded-full border-black border top-[6px] left-[6px] uppercase bebas-neue text-[10px] px-2 py-[2px]">Best seller</span>
+                        <div class="w-full lg:h-[355px] overflow-hidden rounded-[10px] aspect-square lg:aspect-auto">
+                            <img 
+                            class="w-full h-full object-cover product-image"
+                            src="https://images.unsplash.com/photo-1622445275576-721325763afe?q=80&w=2080"
+                            data-primary-img="https://images.unsplash.com/photo-1622445275576-721325763afe?q=80&w=2080"
+                            data-secondary-img="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1980"
+                            alt="T-shirt on model">
+                            
 
-                </div>
-                <div class="p-3">
-                    <h2 class="uppercase bebas-neue text-lg mb-1">Outside Vibes T-Shirt Sunshine</h2>
-                    <div class="flex mb-1">
-                        <ul class="flex items center">
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                        </ul>
-                        <p class="poppins font-[400] text-xs ml-2">1,453 Reviews</p>
-                    </div>
-                    <p class="poppins font-[500]">$104.95</p>
-                </div>
-                
-            </article>
-            <article class="w-full lg:h-[467px] aspect-[0.76] lg:aspect-none rounded relative">
-                <span class="absolute bg-white rounded-full border-black border top-[6px] left-[6px] uppercase bebas-neue text-[10px] px-2 py-[2px]">Best seller</span>
-                <div class="w-full lg:h-[355px] overflow-hidden rounded-[10px]">
-                    <img 
-                    class="w-full product-image"
-                    src="https://plus.unsplash.com/premium_photo-1713586580802-854a58542159?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                    data-primary-img="https://plus.unsplash.com/premium_photo-1713586580802-854a58542159?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    data-secondary-img="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="Crossed legs with yellow background">
-                    
+                        </div>
+                        <div class="p-3">
+                            <h2 class="uppercase bebas-neue text-lg mb-1">Outside Vibes T-Shirt Sunshine</h2>
+                            <div class="flex mb-2">
+                                <ul class="flex items-center">
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-lined.svg" alt="a star empty representing no vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-lined.svg" alt="a star empty representing no vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-lined.svg" alt="a star empty representing no vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                </ul>
+                                <p class="poppins font-[400] text-[11px] lg:text-xs ml-2">1,453 Reviews</p>
+                            </div>
+                            <p class="poppins font-[500]">$104.95</p>
+                        </div>
+                        
+                    </article>
+                    <article class="w-full lg:h-[467px] aspect-[0.76] lg:aspect-none rounded relative">
+                        <span class="absolute bg-white rounded-full border-black border top-[6px] left-[6px] uppercase bebas-neue text-[10px] px-2 py-[2px]">Best seller</span>
+                        <div class="w-full lg:h-[355px] overflow-hidden rounded-[10px] aspect-square lg:aspect-auto">
+                            <img 
+                            class="w-full h-full object-cover product-image"
+                            src="https://images.unsplash.com/photo-1516826957135-700dedea698c?q=80&w=1974"
+                            data-primary-img="https://images.unsplash.com/photo-1516826957135-700dedea698c?q=80&w=1974"
+                            data-secondary-img="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=2070"
+                            alt="Styled t-shirt">
+                            
 
-                </div>
-                <div class="p-3">
-                    <h2 class="uppercase bebas-neue text-lg mb-1">Outside Vibes T-Shirt Sunshine</h2>
-                    <div class="flex mb-1">
-                        <ul class="flex items center">
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                            <li>
-                                <img src="images/iconmonstr-star-filled.svg" alt="" class="h-[12px] w-[12px]">
-                            </li>
-                        </ul>
-                        <p class="poppins font-[400] text-xs ml-2">1,453 Reviews</p>
+                        </div>
+                        <div class="p-3">
+                            <h2 class="uppercase bebas-neue text-lg mb-1">Styled t-shirt</h2>
+                            <div class="flex mb-2">
+                                <ul class="flex items-center">
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-lined.svg" alt="a star empty representing no vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-lined.svg" alt="a star empty representing no vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                </ul>
+                                <p class="poppins font-[400] text-[11px] lg:text-xs ml-2">1,453 Reviews</p>
+                            </div>
+                            <p class="poppins font-[500]">$104.95</p>
+                        </div>
+                        
+                    </article>
+                    <article class="w-full lg:h-[467px] aspect-[0.76] lg:aspect-none rounded relative">
+                        <span class="absolute bg-white rounded-full border-black border top-[6px] left-[6px] uppercase bebas-neue text-[10px] px-2 py-[2px]">Best seller</span>
+                        <div class="w-full lg:h-[355px] overflow-hidden rounded-[10px] aspect-square lg:aspect-auto">
+                            <img 
+                            class="w-full h-full object-cover product-image"
+                            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1920"
+                            data-primary-img="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1920"
+                            data-secondary-img="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1964"
+                            alt="Fashion t-shirt display">
+                            
+
+                        </div>
+                        <div class="p-3">
+                            <h2 class="uppercase bebas-neue text-lg mb-1">Fashion t-shirt display</h2>
+                            <div class="flex mb-2">
+                                <ul class="flex items-center">
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                </ul>
+                                <p class="poppins font-[400] text-[11px] lg:text-xs ml-2">1,453 Reviews</p>
+                            </div>
+                            <p class="poppins font-[500]">$104.95</p>
+                        </div>
+                        
+                    </article>
+                    <article class="w-full lg:h-[467px] aspect-[0.76] lg:aspect-none rounded relative">
+                        <span class="absolute bg-white rounded-full border-black border top-[6px] left-[6px] uppercase bebas-neue text-[10px] px-2 py-[2px]">Best seller</span>
+                        <div class="w-full lg:h-[355px] overflow-hidden rounded-[10px] aspect-square lg:aspect-auto">
+                            <img 
+                            class="w-full h-full object-cover product-image"
+                            src="https://images.unsplash.com/photo-1583744946564-b52d496c3fed?q=80&w=1974"
+                            data-primary-img="https://images.unsplash.com/photo-1583744946564-b52d496c3fed?q=80&w=1974"
+                            data-secondary-img="https://images.unsplash.com/photo-1554568218-0f1715e72254?q=80&w=1974"
+                            alt="T-shirt collection display">
+                            
+
+                        </div>
+                        <div class="p-3">
+                            <h2 class="uppercase bebas-neue text-lg mb-1">Outside Vibes T-Shirt Sunshine</h2>
+                            <div class="flex mb-2">
+                                <ul class="flex items-center">
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-filled.svg" alt="a star filled representing one vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-lined.svg" alt="a star empty representing no vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                    <li>
+                                        <img 
+                                        src="images/iconmonstr-star-lined.svg" alt="a star empty representing no vote" class="h-[9px] w-[9px] lg:h-[12px] lg:w-[12px]"
+                                        >
+                                    </li>
+                                </ul>
+                                <p class="poppins font-[400] text-[11px] lg:text-xs ml-2">1,453 Reviews</p>
+                            </div>
+                            <p class="poppins font-[500]">$104.95</p>
+                        </div>
+                        
+                    </article>
+                </section>
+
+                <!-- Custom scrollbar track and thumb -->
+                <div class="absolute bottom-4 left-4 right-4 h-2 bg-gray-100/50 rounded lg:block hidden">
+                    <div id="scrollbarThumb" 
+                        class="absolute h-1 bg-gray-400/50 rounded cursor-pointer transition-all duration-200 ease-in-out hover:h-1.5 hover:bg-gray-500/80">
                     </div>
-                    <p class="poppins font-[500]">$104.95</p>
                 </div>
-                
-            </article>
-        </section>
+            </div>
+
+            <!-- Show More/Less Button - Hidden on desktop -->
+            <button 
+                id="toggleButton"
+                class="mt-4 w-full py-3 px-6 bg-gray-900 text-white rounded-lg font-medium transition-all duration-300 hover:bg-gray-800 lg:hidden"
+                aria-expanded="false"
+            >
+                Show More
+            </button>
+        </div>
       </div>
+
+<style>
+    /* Height for showing only 4 cards (2x2) on mobile */
+    @media (max-width: 1024px) {
+        #gridWrapper.collapsed {
+            max-height: 650px; 
+        }
+        
+        #gridWrapper.expanded {
+            max-height: 2500px; 
+        }
+    }
+</style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const productImages = document.querySelectorAll('.product-image');
-    
+
     productImages.forEach(img => {
-        img.addEventListener('click', function() {
+        img.addEventListener('mouseover', function() {
             const primaryImg = this.getAttribute('data-primary-img');
             const secondaryImg = this.getAttribute('data-secondary-img');
             
@@ -338,6 +551,121 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.src = primaryImg;
             }
         });
+
+        img.addEventListener('mouseout', function() {
+            const primaryImg = this.getAttribute('data-primary-img');
+            this.src = primaryImg;
+           
+        });
+    });
+
+    // Custom scrollbar functionality
+    const container = document.getElementById('productGrid');
+    const thumb = document.getElementById('scrollbarThumb');
+    const track = thumb.parentElement;
+    
+    function updateScrollThumb() {
+        // Calculate scroll percentage
+        const scrollPercentage = (container.scrollLeft / (container.scrollWidth - container.clientWidth)) * 100;
+        
+        // Calculate thumb width - minimum 10% of track width
+        const thumbWidth = Math.max(
+            (container.clientWidth / container.scrollWidth) * 100,
+            10
+        );
+        
+        // Calculate maximum left position to prevent overflow
+        const maxLeft = 100 - thumbWidth;
+        const leftPosition = Math.min(scrollPercentage, maxLeft);
+        
+        // Update thumb position and width
+        thumb.style.left = `${leftPosition}%`;
+        thumb.style.width = `${thumbWidth}%`;
+    }
+
+    // Drag functionality with bounds checking
+    let isDragging = false;
+    let startX;
+    let scrollLeft;
+    let trackWidth;
+
+    thumb.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        thumb.classList.add('bg-gray-500/80'); 
+        
+        // Calculate initial positions
+        startX = e.pageX - track.getBoundingClientRect().left - (thumb.offsetLeft);
+        scrollLeft = container.scrollLeft;
+        trackWidth = track.offsetWidth;
+    });
+
+    document.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        
+        // Calculate new position
+        const trackRect = track.getBoundingClientRect();
+        const x = e.pageX - trackRect.left;
+        
+        // Calculate bounds
+        const thumbWidth = thumb.offsetWidth;
+        const maxX = trackWidth - thumbWidth;
+        
+        // Constrain position within bounds - Avoind thums going out of the container div
+        const boundedX = Math.max(0, Math.min(x - startX, maxX));
+        
+        // Calculate scroll position
+        const scrollRatio = boundedX / maxX;
+        container.scrollLeft = scrollRatio * (container.scrollWidth - container.clientWidth);
+    });
+
+    document.addEventListener('mouseup', () => {
+        isDragging = false;
+        thumb.classList.remove('bg-gray-500/80'); // Remove active state
+    });
+
+    // Update on scroll and resize
+    container.addEventListener('scroll', updateScrollThumb);
+    window.addEventListener('resize', updateScrollThumb);
+    
+    // Initial setup
+    updateScrollThumb();
+
+    // Toggle (Show more button) functionality
+    const wrapper = document.getElementById('gridWrapper');
+    const toggleButton = document.getElementById('toggleButton');
+    
+    toggleButton.addEventListener('click', function() {
+        const isExpanded = wrapper.classList.contains('expanded');
+        
+        if (isExpanded) {
+            wrapper.classList.remove('expanded');
+            wrapper.classList.add('collapsed');
+            this.textContent = 'Show More';
+            this.setAttribute('aria-expanded', 'false');
+            
+            // Smooth scroll to grid top when collapsing
+            wrapper.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            wrapper.classList.remove('collapsed');
+            wrapper.classList.add('expanded');
+            this.textContent = 'Show Less';
+            this.setAttribute('aria-expanded', 'true');
+        }
+    });
+
+    // Initialize collapsed state on mobile
+    if (window.innerWidth < 1024) {
+        wrapper.classList.add('collapsed');
+    }
+
+    // Handle resize events
+    window.addEventListener('resize', function() {
+        if (window.innerWidth >= 1024) {
+            wrapper.classList.remove('collapsed', 'expanded');
+        } else if (!wrapper.classList.contains('expanded')) {
+            wrapper.classList.add('collapsed');
+        }
     });
 });
 </script>
