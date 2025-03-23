@@ -19,3 +19,15 @@
 .font-source-black {
     font-family: 'Source_serif_black', serif;
 }
+
+/*show more mobile button*/
+
+@media (max-width: 1024px) {
+  #gridWrapper.collapsed {
+      max-height: 650px; 
+  }
+  
+  #gridWrapper.expanded {
+      max-height: 2500px; 
+  }
+}
