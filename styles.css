@@ -2,19 +2,19 @@
 
 
 @font-face {
-    font-family: 'Source_serif_black';
-    src: url('./fonts/SourceSerifPro-Black.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Source_serif_black';
+  src: url('./fonts/SourceSerifPro-Black.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .bebas-neue {
-    font-family: "Bebas Neue", sans-serif;
-  }
+  font-family: "Bebas Neue", sans-serif;
+}
 
-  .poppins {
-    font-family: "Poppins", sans-serif;
-  }
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
 
 .font-source-black {
     font-family: 'Source_serif_black', serif;

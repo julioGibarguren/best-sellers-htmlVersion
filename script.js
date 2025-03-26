@@ -1,11 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Image swap functionality
     const productImages = document.querySelectorAll('.product-image');
     productImages.forEach(img => {
-        img.addEventListener('mouseover', function() {
+        img.addEventListener('mouseover', function () {
             const primaryImg = this.getAttribute('data-primary-img');
             const secondaryImg = this.getAttribute('data-secondary-img');
-            
+
             if (this.src === primaryImg) {
                 this.src = secondaryImg;
             } else {
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        img.addEventListener('mouseout', function() {
+        img.addEventListener('mouseout', function () {
             const primaryImg = this.getAttribute('data-primary-img');
             this.src = primaryImg;
 
@@ -24,21 +24,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const container = document.getElementById('productGrid');
     const thumb = document.getElementById('scrollbarThumb');
     const track = thumb.parentElement;
-    
+
     function updateScrollThumb() {
         // Calculate scroll percentage
         const scrollPercentage = (container.scrollLeft / (container.scrollWidth - container.clientWidth)) * 100;
-        
+
         // Calculate thumb width - minimum 10% of track width
         const thumbWidth = Math.max(
             (container.clientWidth / container.scrollWidth) * 100,
             10
         );
-        
+
         // Calculate maximum left position to prevent overflow
         const maxLeft = 100 - thumbWidth;
         const leftPosition = Math.min(scrollPercentage, maxLeft);
-        
+
         // Update thumb position and width
         thumb.style.left = `${leftPosition}%`;
         thumb.style.width = `${thumbWidth}%`;
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     thumb.addEventListener('mousedown', (e) => {
         isDragging = true;
         thumb.classList.add('bg-gray-500/80'); // Active state
-        
+
         // Calculate initial positions
         startX = e.pageX - track.getBoundingClientRect().left - (thumb.offsetLeft);
         scrollLeft = container.scrollLeft;
@@ -63,18 +63,18 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('mousemove', (e) => {
         if (!isDragging) return;
         e.preventDefault();
-        
+
         // Calculate new position
         const trackRect = track.getBoundingClientRect();
         const x = e.pageX - trackRect.left;
-        
+
         // Calculate bounds
         const thumbWidth = thumb.offsetWidth;
         const maxX = trackWidth - thumbWidth;
-        
+
         // Constrain position within bounds
         const boundedX = Math.max(0, Math.min(x - startX, maxX));
-        
+
         // Calculate scroll position
         const scrollRatio = boundedX / maxX;
         container.scrollLeft = scrollRatio * (container.scrollWidth - container.clientWidth);
@@ -88,25 +88,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update on scroll and resize
     container.addEventListener('scroll', updateScrollThumb);
     window.addEventListener('resize', updateScrollThumb);
-    
+
     // Initial setup
     updateScrollThumb();
 
     // Toggle functionality for mobile view
     const wrapper = document.getElementById('gridWrapper');
     const toggleButton = document.getElementById('toggleButton');
-    
-    toggleButton.addEventListener('click', function() {
+
+    toggleButton.addEventListener('click', function () {
         const isExpanded = wrapper.classList.contains('expanded');
-        
+
         if (isExpanded) {
             wrapper.classList.remove('expanded');
             wrapper.classList.add('collapsed');
             this.textContent = 'Show More';
             this.setAttribute('aria-expanded', 'false');
-            
+
             // Smooth scroll to grid top when collapsing
-            wrapper.scrollIntoView({ behavior: 'smooth' });
+            wrapper.scrollIntoView({
+                behavior: 'smooth'
+            });
         } else {
             wrapper.classList.remove('collapsed');
             wrapper.classList.add('expanded');
@@ -121,11 +123,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Handle resize events
-    window.addEventListener('resize', function() {
+    window.addEventListener('resize', function () {
         if (window.innerWidth >= 1024) {
             wrapper.classList.remove('collapsed', 'expanded');
         } else if (!wrapper.classList.contains('expanded')) {
             wrapper.classList.add('collapsed');
         }
     });
-}); 
+});
